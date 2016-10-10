@@ -100,6 +100,7 @@ public class ComplexNumberTest {
         ComplexNumber b = new ComplexNumber(-2, -4);
         
         
+        
         assertEquals(new ComplexNumber( 3, -5), a.conjugate());
         assertEquals(new ComplexNumber( -2, 4), b.conjugate());
     }
@@ -114,6 +115,9 @@ public class ComplexNumberTest {
         // |(0 +  3i)| = 3
 
         // TODO: Test schreiben
+        ComplexNumber a = new ComplexNumber(3,-4);
+        
+        assertEquals(5.0, a.abs(), 0.1);
     }   
     
     /**
