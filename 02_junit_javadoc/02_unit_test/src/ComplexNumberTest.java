@@ -83,7 +83,8 @@ public class ComplexNumberTest {
         assertEquals(new ComplexNumber(2, 4), e.divide(4));
     }
         
-    }
+    
+    
 
     /**
      * Testet die Erzeugung der konjugiert Komplexen Zahl.
@@ -95,6 +96,12 @@ public class ComplexNumberTest {
         // (-2  + -4i) --conj--> (-2  + 4i)
           
         // TODO: Test schreiben
+        ComplexNumber a = new ComplexNumber(3, 5);
+        ComplexNumber b = new ComplexNumber(-2, -4);
+        
+        
+        assertEquals(new ComplexNumber( 3, -5), a.conjugate());
+        assertEquals(new ComplexNumber( -2, 4), b.conjugate());
     }
 
     /**
