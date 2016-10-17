@@ -1,20 +1,36 @@
-// TODO: JavaDoc
+
+/**
+ *  Erlaubt das Erstellen einer gewünschten Währung.
+ *
+ * @author stella
+ *
+ */
 public class Waehrung {
 
-    // TODO: JavaDoc
+
+    /**
+     * Währungskurs.
+     */
     private final int kurs;
 
-    // TODO: JavaDoc
+
+    /**
+     * Name der Währung.
+     */
     private final String name;
 
-    // TODO: JavaDoc
+    /**
+     * Abgekürzte Währungsform.
+     */
     private final String kuerzel;
 
-    // TODO: JavaDoc
+   /**
+    * Wird benötigt um die Währung zu berechnen.
+    */
     private static final long TEILER = 10000;
 
     /**
-     * Erzeugt ein neues Objekt.
+     * Erzeugt ein neues Objekt, der Klasse Währung.
      *
      * @param name Name der Währung (z.B. EURO).
      * @param kuerzel Kürzel der Währung (z.B. €).
@@ -26,22 +42,37 @@ public class Waehrung {
         this.kuerzel = kuerzel;
     }
 
-    // TODO: JavaDoc
+    /**
+     *
+     * @param betrag der zu umwandelden währung
+     * @param toWaehrung währung in die umgewandelt wird
+     * @return gibt den betrag der währug zurück
+     */
     public long umrechnen(long betrag, Waehrung toWaehrung) {
         return betrag * kurs / toWaehrung.kurs;
     }
 
-    // TODO: JavaDoc
+
+    /**
+     *
+     * @return den aktuellen Kurs für zum umrechnen der währung
+     */
     public int getKurs() {
         return kurs;
     }
-    
-    // TODO: JavaDoc
+
+    /**
+     *
+     * @return Name der Währung
+     */
     public String getName() {
         return name;
     }
 
-    // TODO: JavaDoc
+    /**
+     *
+     * @return den Kürzel der Währung (z.B €)
+     */
     public String getKuerzel() {
         return kuerzel;
     }
