@@ -1,3 +1,5 @@
+package firma.bestellwesen;
+
 /**
  * Eine Position der Bestellung.
  */

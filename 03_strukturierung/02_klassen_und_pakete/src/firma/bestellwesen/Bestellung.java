@@ -1,3 +1,6 @@
+package firma.bestellwesen;
+import firma.stammdaten.Kunde;
+
 /**
  * Eine Bestellung.
  */
